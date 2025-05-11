@@ -1,12 +1,12 @@
 function taskAsinc(){
     return new Promise(function (resolve, reject)  {
         setTimeout(() => {
-            if (Math.random() < 0.5) {
+            if (Math.random() < 0.9) {
                 resolve("Tarea Asincrona copletada");
             }else{
             reject(new Error ("Error en la tarea asincrona"));
             }
-        }, 2000);
+        }, 5000);
     });
 }
 const resultFulfilled = taskAsinc().then((response) =>{
